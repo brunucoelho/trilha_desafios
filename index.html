@@ -2,14 +2,10 @@
 <html class="pagina-inscricao" lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./assets/logo-trilhas.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Desafio II | Back-end</title>
-    <link
-      rel="icon"
-      href="https://iconape.com/wp-content/files/db/257810/png/bandeira-maranhao-logo.png"
-      type="image/x-icon"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,19 +25,24 @@
                 <input
                   class="input-inscricao"
                   type="text"
-                  placeholder="Nome Completo"
+                  placeholder="Nome Completo*"
                 />
                 <input
                   class="input-inscricao"
                   type="text"
-                  placeholder="E-mail"
+                  placeholder="Nome Social"
                 />
-                <input class="input-inscricao" type="text" placeholder="CPF" />
                 <input
                   class="input-inscricao"
                   type="text"
-                  placeholder="Telefone"
+                  placeholder="Data de Nascimento*"
                 />
+                <input
+                  class="input-inscricao"
+                  type="text"
+                  placeholder="Telefone*"
+                />
+                <input class="input-inscricao" type="text" placeholder="CPF*" />
                 <input
                   class="input-inscricao"
                   type="text"
@@ -50,8 +51,43 @@
                 <input
                   class="input-inscricao"
                   type="text"
-                  placeholder="Cidade"
+                  placeholder="Número"
                 />
+                <input
+                  class="input-inscricao"
+                  type="text"
+                  placeholder="Completmento"
+                />
+                <input class="input-inscricao" type="text" placeholder="CEP*" />
+                <input
+                  class="input-inscricao"
+                  type="text"
+                  placeholder="Cidade*"
+                />
+                <!-- <input
+                  class="input-inscricao"
+                  type="text"
+                  placeholder="Escolaridade*"
+                /> -->
+                <select
+                  class="input-inscricao"
+                  name="linguagem"
+                  id="escolaridade"
+                >
+                  <option value="JavaScript">Escolaridade*</option>
+                  <option value="Ensino Médio incompleto">
+                    Ensino Médio incompleto
+                  </option>
+                  <option value="Ensino Médio completo">
+                    Ensino Médio completo
+                  </option>
+                  <option value="Ensino Superior imcompleto">
+                    Ensino Superior incompleto
+                  </option>
+                  <option value="Ensino Superior completo">
+                    Ensino Superior completo
+                  </option>
+                </select>
               </div>
             </div>
 
@@ -80,7 +116,7 @@
                 </div>
 
                 <div class="title-docs">
-                  <div class="title-and-box">
+                  <!-- <div class="title-and-box">
                     <p class="docs-p">Comprovante de Residência</p>
                     <div class="enviar-docs">
                       <div class="enviar-docs-p">
@@ -98,17 +134,18 @@
                       </div>
                       <button class="botao-enviar">Selecionar</button>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
               <p class="text-alerta">
-                *Atenção: Todos os dados acima são obrigatórios
+                *Atenção: Todos os campos com (*) são obrigatórios
               </p>
             </div>
           </div>
           <div class="conjunto-botoes">
             <button class="botao botao-laranja">Cancelar</button>
+            <button class="botao botao-laranja">Salvar</button>
             <button class="botao botao-branco">Enviar</button>
           </div>
         </div>
@@ -116,7 +153,7 @@
       <div class="logo-lateral">
         <img
           class="logo-imagem"
-          src="./assets/logo_trilhas.png"
+          src="./assets/logo_trilhas.svg"
           alt="Logo Programa Trilhas"
         />
       </div>
